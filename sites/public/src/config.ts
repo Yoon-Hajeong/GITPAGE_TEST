@@ -8,7 +8,7 @@ import type {
 import { LinkPreset } from "./types/config";
 
 export const siteConfig: SiteConfig = {
-	title: "YOONHAJEONG",
+	title: "isla",
 	subtitle: "personal notes & writing",
 	lang: "en",
 	themeColor: {
@@ -46,8 +46,8 @@ export const navBarConfig: NavBarConfig = {
 };
 
 export const profileConfig: ProfileConfig = {
-	avatar: "assets/images/yoonhajeong-monogram.svg",
-	name: "YOONHAJEONG",
+	avatar: "assets/images/isla-monogram.svg",
+	name: "isla",
 	bio: "writer · reader · maker",
 	links: [
 		{
