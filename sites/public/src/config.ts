@@ -1,0 +1,69 @@
+import type {
+	ExpressiveCodeConfig,
+	LicenseConfig,
+	NavBarConfig,
+	ProfileConfig,
+	SiteConfig,
+} from "./types/config";
+import { LinkPreset } from "./types/config";
+
+export const siteConfig: SiteConfig = {
+	title: "YOONHAJEONG",
+	subtitle: "personal notes & writing",
+	lang: "en",
+	themeColor: {
+		hue: 30,
+		fixed: true,
+	},
+	banner: {
+		enable: false,
+		src: "assets/images/demo-banner.png",
+		position: "center",
+		credit: {
+			enable: false,
+			text: "",
+			url: "",
+		},
+	},
+	toc: {
+		enable: true,
+		depth: 2,
+	},
+	favicon: [],
+};
+
+export const navBarConfig: NavBarConfig = {
+	links: [
+		LinkPreset.Home,
+		LinkPreset.Archive,
+		LinkPreset.About,
+		{
+			name: "📓 Notes",
+			url: "/wiki/notes/",
+			external: true,
+		},
+	],
+};
+
+export const profileConfig: ProfileConfig = {
+	avatar: "assets/images/yoonhajeong-monogram.svg",
+	name: "YOONHAJEONG",
+	bio: "writer · reader · maker",
+	links: [
+		{
+			name: "GitHub",
+			icon: "fa6-brands:github",
+			url: "https://github.com/YOONHAJEONG",
+		},
+	],
+};
+
+export const licenseConfig: LicenseConfig = {
+	enable: true,
+	name: "CC BY-NC-SA 4.0",
+	url: "https://creativecommons.org/licenses/by-nc-sa/4.0/",
+};
+
+export const expressiveCodeConfig: ExpressiveCodeConfig = {
+	theme: "github-dark",
+};

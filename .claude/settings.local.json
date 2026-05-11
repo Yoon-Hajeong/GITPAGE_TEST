@@ -1,0 +1,13 @@
+{
+  "permissions": {
+    "allow": [
+      "Bash(git clone *)",
+      "Bash(rm -rf public/.git public/.github personal/.git personal/.github)",
+      "Bash(rm -rf public/src/content/posts/*)",
+      "Read(//tmp/ref-repo/sites/public/src/**)",
+      "Read(//tmp/ref-repo/sites/public/**)",
+      "Read(//tmp/ref-repo/scripts/**)",
+      "Bash(node scripts/sync-wiki.mjs)"
+    ]
+  }
+}
