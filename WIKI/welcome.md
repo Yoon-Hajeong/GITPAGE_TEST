@@ -1,18 +1,18 @@
 ---
-title: "Welcome to YOONHAJEONG's Wiki"
+title: "Welcome to isla's Wiki"
 category: "Personal"
 tags: [welcome, introduction, about]
 raw_source: ""
 created: "2026-05-11"
 updated: "2026-05-11"
-summary: "YOONHAJEONG의 위키/블로그에 오신 것을 환영합니다. 여기는 개인 노트와 공개 글이 함께 있는 공간입니다."
+summary: "isla의 위키/블로그에 오신 것을 환영합니다. 여기는 개인 노트와 공개 글이 함께 있는 공간입니다."
 publish: true
 cover: ""
 ---
 
-# Welcome to YOONHAJEONG
+# Welcome to isla
 
-안녕하세요! 이곳은 **YOONHAJEONG의 개인 위키이자 공개 블로그**입니다.
+안녕하세요! 이곳은 **isla의 개인 위키이자 공개 블로그**입니다.
 
 ## 두 개의 사이트
 
