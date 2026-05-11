@@ -1,0 +1,21 @@
+<svg viewBox="0 0 400 400" xmlns="http://www.w3.org/2000/svg">
+  <defs>
+    <filter id="grain">
+      <feTurbulence type="fractalNoise" baseFrequency="0.9" numOctaves="4" result="noise" />
+      <feColorMatrix in="noise" type="saturate" values="0.3" />
+      <feBlend in="SourceGraphic" in2="noise" mode="multiply" />
+    </filter>
+  </defs>
+  <rect width="400" height="400" fill="#f6f3ec" filter="url(#grain)"/>
+  <line x1="20" y1="30" x2="380" y2="30" stroke="#161410" stroke-width="1"/>
+  <line x1="20" y1="370" x2="380" y2="370" stroke="#161410" stroke-width="1"/>
+  
+  <text x="200" y="100" font-family="Georgia, serif" font-size="48" font-weight="bold" 
+        text-anchor="middle" fill="#161410">YH</text>
+  
+  <text x="200" y="200" font-family="'Brush Script MT', cursive" font-size="36" 
+        text-anchor="middle" fill="#161410">Personal Wiki</text>
+  
+  <text x="200" y="320" font-family="Georgia, serif" font-size="14" font-style="italic"
+        text-anchor="middle" fill="#161410">personal notes & writing</text>
+</svg>
