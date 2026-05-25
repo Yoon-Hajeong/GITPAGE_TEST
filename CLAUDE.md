@@ -196,7 +196,12 @@ node scripts/sync-wiki.mjs
 
 ### 배포
 
-`main` 브랜치에 push되면 GitHub Actions가 두 사이트 모두 자동 빌드/배포.
+`main` 브랜치에 push되면 GitHub Actions가 두 사이트를 빌드한 후 Cloudflare Pages로 자동 배포.
+
+배포 정보:
+- **프로젝트**: Cloudflare Pages (project-name: `wiki`)
+- **URL**: `https://wiki.pages.dev/` (Fuwari) + `https://wiki.pages.dev/notes/` (Quartz)
+- **인증**: `CLOUDFLARE_API_TOKEN`, `CLOUDFLARE_ACCOUNT_ID` (GitHub Secrets)
 
 ---
 
