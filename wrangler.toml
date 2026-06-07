@@ -1,2 +1,3 @@
-name = "wikitest"
+name = "gitpage-test"
 pages_build_mode = "direct"
+pages_build_output_dir = "_site"
