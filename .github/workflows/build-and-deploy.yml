@@ -42,6 +42,12 @@ jobs:
           mkdir -p _site/notes
           cp -r sites/personal/public/* _site/notes/
 
+      - name: Deploy to Cloudflare Pages
+        run: npx wrangler pages deploy _site --project-name=wikitest
+        env:
+          CLOUDFLARE_API_TOKEN: ${{ secrets.CLOUDFLARE_API_TOKEN }}
+          CLOUDFLARE_ACCOUNT_ID: ${{ secrets.CLOUDFLARE_ACCOUNT_ID }}
+
       - name: Upload artifact
         uses: actions/upload-pages-artifact@v3
         with:
