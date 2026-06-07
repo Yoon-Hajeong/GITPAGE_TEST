@@ -1,6 +1,6 @@
 # 📚 Personal Wiki + Two-Site Publishing System
 
-Obsidian 기반 개인 위키. **하나의 마크다운 → 두 개의 GitHub Pages 사이트** 자동 배포.
+Obsidian 기반 개인 위키. **하나의 마크다운 → 두 개의 GitHub Pages 사이트** 자동 배포해준다.
 
 ---
 
