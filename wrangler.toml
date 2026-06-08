@@ -2,6 +2,9 @@
 compatibility_date = "2026-05-01"
 pages_build_output_dir = "./sites/public/dist"
 
+[pages]
+functions_dir = "functions"
+
 [[d1_databases]]
 binding = "DB"
 database_name = "gitpage-test-db"

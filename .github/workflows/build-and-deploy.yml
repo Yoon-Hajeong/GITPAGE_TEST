@@ -41,7 +41,6 @@ jobs:
           cp -r sites/public/dist/* _site/
           mkdir -p _site/notes
           cp -r sites/personal/public/* _site/notes/
-          cp -r functions _site/functions
 
       - name: Deploy to Cloudflare Pages
         run: npx wrangler pages deploy _site --project-name=gitpage-test --branch=main
