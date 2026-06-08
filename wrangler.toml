@@ -1,8 +1,8 @@
 ﻿name = "gitpage-test"
 compatibility_date = "2026-05-01"
-pages_build_output_dir = "_site"
 
 [pages]
+build_output_dir = "_site"
 functions_dir = "functions"
 
 [[d1_databases]]
