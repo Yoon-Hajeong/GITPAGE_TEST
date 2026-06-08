@@ -42,18 +42,13 @@ jobs:
           mkdir -p _site/notes
           cp -r sites/personal/public/* _site/notes/
 
-      - name: Upload artifact
-        uses: actions/upload-pages-artifact@v3
+      - name: Deploy to Cloudflare Pages
+        uses: cloudflare/wrangler-action@v3
         with:
-          path: _site
-
-  deploy:
-    environment:
-      name: github-pages
-      url: ${{ steps.deployment.outputs.page_url }}
-    runs-on: ubuntu-latest
-    needs: build
-    steps:
-      - name: Deploy to GitHub Pages
-        id: deployment
-        uses: actions/deploy-pages@v4
+          apiToken: ${{ secrets.CLOUDFLARE_API_TOKEN }}
+          accountId: ${{ secrets.CLOUDFLARE_ACCOUNT_ID }}
+        env:
+          WRANGLER_PROJECT_NAME: gitpage-test
+        run: |
+          # Deploy to Cloudflare Pages
+          npx wrangler pages deploy _site --project-name=gitpage-test --branch=main
