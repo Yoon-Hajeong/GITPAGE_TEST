@@ -1,1 +1,8 @@
-name = "gitpage-test"
+﻿name = "gitpage-test"
+compatibility_date = "2026-05-01"
+pages_build_output_dir = "./sites/public/dist"
+
+[[d1_databases]]
+binding = "DB"
+database_name = "gitpage-test-db"
+database_id = "dd3486ac-46eb-446d-9ded-f34b8cf50361"
