@@ -41,9 +41,10 @@ jobs:
           cp -r sites/public/dist/* _site/
           mkdir -p _site/notes
           cp -r sites/personal/public/* _site/notes/
+          cp -r functions _site/functions
 
       - name: Deploy to Cloudflare Pages
-        run: npx wrangler pages deploy _site functions --project-name=gitpage-test --branch=main
+        run: npx wrangler pages deploy _site --project-name=gitpage-test --branch=main
         env:
           CLOUDFLARE_API_TOKEN: ${{ secrets.CLOUDFLARE_API_TOKEN }}
           CLOUDFLARE_ACCOUNT_ID: ${{ secrets.CLOUDFLARE_ACCOUNT_ID }}
